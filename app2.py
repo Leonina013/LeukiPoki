@@ -132,7 +132,7 @@ if uploaded_file is not None:
 
 if confidence_score >= 0.85:
 
- if index == 0:
+ if index == 3:
   st.write('You identify as', sex,'and your age is', age,'years')
   st.write('The Predicted Class is:', class_name)
   st.write('Probability Percentage:', confidence_score*100, '%')
