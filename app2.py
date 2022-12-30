@@ -1,17 +1,3 @@
-import streamlit as st
-from PIL import Image
-import tensorflow as tf
-from tensorflow import keras
-from tensorflow.keras.optimizers import RMSprop
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from PIL import Image, ImageOps
-import numpy as np
-
-from keras.models import load_model
-from PIL import Image, ImageOps #Install pillow instead of PIL
-import numpy as np
- 
-
 def local_css(file_name):
  with open(file_name) as f:
   st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
@@ -56,6 +42,22 @@ def add_bg_from_url():
      )
 
 add_bg_from_url()
+
+import streamlit as st
+from PIL import Image
+import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras.optimizers import RMSprop
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from PIL import Image, ImageOps
+import numpy as np
+
+from keras.models import load_model
+from PIL import Image, ImageOps #Install pillow instead of PIL
+import numpy as np
+ 
+
+
 
 
 st.sidebar.title("ALL Detector")
