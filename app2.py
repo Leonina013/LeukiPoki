@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 from PIL import Image
 import tensorflow as tf
@@ -12,7 +13,7 @@ from keras.models import load_model
 from PIL import Image, ImageOps #Install pillow instead of PIL
 import numpy as np
  
-
+os.environ['TF_XLA_FLAGS'] = '--tf_xla_enable_xla_devices'
 
 
 
