@@ -2,6 +2,7 @@ import streamlit as st
 from PIL import Image
 import tensorflow as tf
 from tensorflow import keras
+from keras.preprocessing import image
 from tensorflow.keras.optimizers import RMSprop
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from PIL import Image, ImageOps
