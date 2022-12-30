@@ -121,9 +121,21 @@ if uploaded_file is not None:
 
 
 
+ if bmi < 18.5:
+  st.write("You are underweight according to your bmi, hence your rate of recovery will be speedy")
+ if bmi >= 18.5 and bmi < 24.9:
+  st.write("You are normal according to your bmi, you will have a speedy recovery")
+ if bmi >= 24.9 and bmi < 29.9:
+  st.write("You are overweight according to your bmi, you will have a slower recovery rate")
+ if bmi >= 29.9 and bmi < 34.9:
+  st.write("You are obese according to your bmi, you will have a slower recovery rate")
+ if bmi >=34.9:
+  st.write("You are extremely obese according to your bmi, you will have a reduced recovery rate, so please be patient")
+
+
 if confidence_score >= 0.85:
 
- if index == 3:
+ if index == 0:
   st.write('You identify as', sex,'and your age is', age,'years')
   st.write('The Predicted Class is:', class_name)
   st.write('Probability Percentage:', confidence_score*100, '%')
@@ -137,24 +149,14 @@ if confidence_score >= 0.85:
   st.write('The Original Probability Percentage:', confidence_score*100, '%')
   st.write('Probability Percentage due to your age group:', confidence2 * 100, '%')
 
-  if index == 2:
-   st.write("This looks like a Malignant Pro-B variant of ALL. You need to get it checked before the cancer starts spreading")
-  elif index == 1:
-   st.write("This looks like a Malignant Pre-B variant of ALL. You need to get it checked ASAP before the condition metastisizes")
-  elif index == 0:
-   st.write("This looks like an early Malignant Pre-B variant of ALL. You need to get it checked as a priority before it becomes something serious")
-   st.write("Malignancy is a term for diseases in which abnormal cells divide without control and can invade nearby tissues. Malignant cells can also spread  to other parts of the body through the blood and lymph systems.")
+ if index == 1:
+  st.write("This looks like a Malignant Pro-B variant of ALL. You need to get it checked before the cancer starts spreading")
+ elif index == 2:
+  st.write("This looks like a Malignant Pre-B variant of ALL. You need to get it checked ASAP before the condition metastisizes")
+ elif index == 3:
+  st.write("This looks like an early Malignant Pre-B variant of ALL. You need to get it checked as a priority before it becomes something serious")
+  st.write("Malignancy is a term for diseases in which abnormal cells divide without control and can invade nearby tissues. Malignant cells can also spread  to other parts of the body through the blood and lymph systems.")
 
-   if bmi < 18.5:
-    st.write("You are underweight according to your bmi, hence your rate of recovery will be speedy")
-   if bmi >= 18.5 and bmi < 24.9:
-    st.write("You are normal according to your bmi, you will have a speedy recovery")
-   if bmi >= 24.9 and bmi < 29.9:
-    st.write("You are overweight according to your bmi, you will have a slower recovery rate")
-   if bmi >= 29.9 and bmi < 34.9:
-    st.write("You are obese according to your bmi, you will have a slower recovery rate")
-   if bmi >=34.9:
-    st.write("You are extremely obese according to your bmi, you will have a reduced recovery rate, so please be patient")
 
 else:
  st.write("You are free from ALL but don't forget to get a body checkup regularly")   
