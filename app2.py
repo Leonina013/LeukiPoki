@@ -145,16 +145,16 @@ if confidence_score >= 0.85:
   st.write("This looks like an early Malignant Pre-B variant of ALL. You need to get it checked as a priority before it becomes something serious")
   st.write("Malignancy is a term for diseases in which abnormal cells divide without control and can invade nearby tissues. Malignant cells can also spread  to other parts of the body through the blood and lymph systems.")
 
-  if bmi < 18.5:
-   st.write("You are underweight according to your bmi, hence your rate of recovery will be speedy")
-  if bmi >= 18.5 and bmi < 24.9:
-   st.write("You are normal according to your bmi, you will have a speedy recovery")
-  if bmi >= 24.9 and bmi < 29.9:
-   st.write("You are overweight according to your bmi, you will have a slower recovery rate")
-  if bmi >= 29.9 and bmi < 34.9:
-   st.write("You are obese according to your bmi, you will have a slower recovery rate")
-  if bmi >=34.9:
-   st.write("You are extremely obese according to your bmi, you will have a reduced recovery rate, so please be patient")
+ if bmi < 18.5:
+  st.write("You are underweight according to your bmi, hence your rate of recovery will be speedy")
+ if bmi >= 18.5 and bmi < 24.9:
+  st.write("You are normal according to your bmi, you will have a speedy recovery")
+ if bmi >= 24.9 and bmi < 29.9:
+  st.write("You are overweight according to your bmi, you will have a slower recovery rate")
+ if bmi >= 29.9 and bmi < 34.9:
+  st.write("You are obese according to your bmi, you will have a slower recovery rate")
+ if bmi >=34.9:
+  st.write("You are extremely obese according to your bmi, you will have a reduced recovery rate, so please be patient")
 
 else:
  st.write("You are free from ALL but don't forget to get a body checkup regularly")   
