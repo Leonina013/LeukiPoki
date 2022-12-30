@@ -24,7 +24,7 @@ np.set_printoptions(suppress=True)
 
 # Load the model
 model = tf.keras.models.load_model('my_model')
-model.save()
+model.save('my_model')
 
 # Load the labels
 class_names = open('labels.txt', 'r').readlines()
